@@ -1,18 +1,13 @@
 # Color3D: Controllable and Consistent 3D Colorization with Personalized Colorizer
 <table>
   <tr>
-    <td> <img src = "figures/1.jpg"> </td>
+    <td> <img src = "figures/figure1.jpg"> </td>
   </tr>
 </table>
 
 
 ## :bulb: Highlight
  - :heart_eyes: :heart_eyes: Color3D is a unified controllable 3D colorization framework for both static and dynamic scenes, producing vivid and chromatically rich renderings with strong cross-view and cross-time consistency.
-<table>
-  <tr>
-    <td> <img src = "figures/inference.png"> </td>
-  </tr>
-</table>
 
 ## :label: TODO 
 - [x] Release video demo.
@@ -21,7 +16,7 @@
 ## :medal_military: Framework Architecture
 <table>
   <tr>
-    <td> <img src = "figures/2.jpg"> </td>
+    <td> <img src = "figures/figure2.jpg"> </td>
   </tr>
   <tr>
     <td><p align="center"><b>Overall Framework of Color3D</b></p></td>
@@ -31,4 +26,5 @@
 
 ​      
 ## :hammer_and_wrench: Installation
+
 ...
