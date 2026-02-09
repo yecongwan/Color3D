@@ -1,4 +1,4 @@
-# Color3D: Controllable and Consistent 3D Colorization with Personalized Colorizer
+# Color3D: Controllable and Consistent 3D Colorization with Personalized Colorizer (ICLR 2026)
 <table>
   <tr>
     <td> <img src = "figures/figure1.jpg"> </td>
@@ -11,6 +11,7 @@
 
 ## :label: TODO 
 - [x] Release video demo.
+- [ ] Release codes for personalized colorizer.
 - [ ] Release training codes.
 
 ## :medal_military: Framework Architecture
@@ -28,3 +29,4 @@
 ## :hammer_and_wrench: Installation
 
 ...
+
