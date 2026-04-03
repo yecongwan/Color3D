@@ -11,8 +11,8 @@
 
 ## :label: TODO 
 - [x] Release video demo.
-- [ ] Release codes for personalized colorizer.
-- [ ] Release training codes.
+- [x] Release codes for personalized colorizer.
+- [x] Release training codes.
 
 ## :medal_military: Framework Architecture
 <table>
@@ -24,9 +24,43 @@
   </tr>
 </table>
 
+   
 
-​      
-## :hammer_and_wrench: Installation
+## 🎨 Automatic Colorization Pipeline
 
-...
+### 🛠️ 1. Environment Setup
 
+Before running the scripts, ensure your environment meets the requirements (e.g., 3DGS + requirements.txt).
+
+```bash
+
+### 📥 2. Pretrained Model Preparation
+You need the ddcolor_paper_tiny.pth weights to perform the initial colorization.
+
+Official Download: https://github.com/piddnad/DDColor/tree/master
+
+### 🚀 3. Usage Guide
+Step 1: Key View Colorization
+
+Bash
+python key_view_colorization.py --folder_path ./example/gray
+
+Step 2: Stage 1 Training
+Navigate to the stage1 directory.
+
+Bash
+cd stage1
+
+# Start Stage 1 training
+python train.py
+
+# Generate intermediate images
+python generate_images.py
+Step 3: Stage 2 Fine-tuning
+Move to the stage2 directory.
+
+Bash
+cd ../stage2
+
+# Start Stage 2 training
+python train.py -s ../example
