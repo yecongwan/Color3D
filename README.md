@@ -32,35 +32,44 @@
 
 Before running the scripts, ensure your environment meets the requirements (e.g., 3DGS + requirements.txt).
 
-```bash
 
 ### 📥 2. Pretrained Model Preparation
-You need the ddcolor_paper_tiny.pth weights to perform the initial colorization.
+You need the ddcolor_paper_tiny.pth weights to ./stage1/.
 
 Official Download: https://github.com/piddnad/DDColor/tree/master
 
 ### 🚀 3. Usage Guide
-Step 1: Key View Colorization
-
-Bash
+Key view colorization
+```
 python key_view_colorization.py --folder_path ./example/gray
+```
 
-Step 2: Stage 1 Training
-Navigate to the stage1 directory.
+Stage 1: Personalized Colorizer Training
 
-Bash
+```
 cd stage1
+```
 
-# Start Stage 1 training
+Start Stage 1 training:
+
+```
 python train.py
+```
 
-# Generate intermediate images
+Generate intermediate images:
+
+```
 python generate_images.py
-Step 3: Stage 2 Fine-tuning
-Move to the stage2 directory.
+```
 
-Bash
+Stage 2: 3D Colorization
+
+```
 cd ../stage2
+```
 
-# Start Stage 2 training
+Start Stage 2 training:
+
+```
 python train.py -s ../example
+```
