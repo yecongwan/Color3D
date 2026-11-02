@@ -107,7 +107,7 @@ def img2tensor(imgs, bgr2rgb=True, float32=True):
 def load_checkpoint(opt, model):
     print(f"=> loading checkpoint '{opt.model_path}'")
 
-    checkpoint = torch.load(opt.model_path, map_location='cpu')
+    checkpoint = torch.load(opt.model_path, map_location='cpu', weights_only=True)
     model.load_state_dict(checkpoint['model'])
 
     print(f"=> loaded successfully '{opt.model_path}'")
